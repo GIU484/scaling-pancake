@@ -1,0 +1,156 @@
+.navigation {
+  margin-top: 25px;
+}
+
+.navigation button {
+  border: var(--button-boarder);
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+        
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* dark theme*/
+
+  button:hover {
+    background-color: var(--hover-background);
+    box-shadow: var(--box-shadow);
+  }
+  
+  button.active {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-button {
+    background-color: var(--button-save-background);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .save-button:hover{
+    background-color: var(--button-save-background-hover);
+  }
+  
+  .cancel-button {
+    background-color: var(--button-cancel-background);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cancel-button:hover {
+    background-color: var(--button-cancel-background-hover);
+  }
+
+  .shortcut-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .shortcut-buttons button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shortcut-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .shortcut-buttons button:last-child {
+    background-color: red;
+  }
+  
+  .shortcut-buttons button:last-child:hover {
+    background-color: darkred;
+  }
+
+  .edit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .edit-buttons .save-button {
+    padding: 5px 10px;
+    background-color: var(--button-save-background);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-buttons .save-button:hover {
+    background-color: darkgreen;
+  }
+  
+  .edit-buttons .cancel-button {
+    padding: 5px 10px;
+    background-color: var(--button-cancel-background);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-buttons .cancel-button:hover {
+    background-color: darkred;
+  }
+
+   /* Add Placeholder Button */
+   .add-placeholder-button {
+    padding: 10px 15px;
+    border: var(--button-boarder);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .add-placeholder-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .emoji-button {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .emoji-button:hover {
+    transform: scale(1.2); /* Scale up slightly on hover */
+  }

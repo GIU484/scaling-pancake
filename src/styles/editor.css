@@ -1,0 +1,27 @@
+.editor-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .editor-toolbar {
+    margin-top: 10px;
+    text-align: right;
+    position: relative; 
+  }
+
+  .editing-area {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+  }
+
+  #editor-[trigger] {
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    height: 150px;
+    background-color: var(--input-background);
+  }
+
+  

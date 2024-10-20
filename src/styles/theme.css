@@ -1,0 +1,212 @@
+/* Themes */
+
+/* Light Theme */
+.light-theme {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-background: #ffffff;
+  --button-text-color: #007bff;
+  --button-boarder: #007bff;
+  --boarder-style: solid;
+  --button-cancel-background: red;
+  --button-cancel-background-hover: #490000;
+  --button-save-background: green;
+  --button-save-background-hover: #004d00;
+  --input-background: #f9f9f9;
+  --input-border: #ccc;
+  --font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+/* Dark Theme */
+.dark-theme {
+  --background-color: #0d0d0d; /* Darker background */
+  --text-color: #e0e0e0;
+  --button-background: #1a1a1a; /* Darker button background */
+  --button-text-color: #ffffff;
+  --button-cancel-background: #b30000; /* Darker red */
+  --button-save-background: #1f7a1f; /* Darker green */
+  --input-background: #1a1a1a; /* Darker input background */
+  --input-border: #333333;
+  --box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  --hover-background: #333333;  
+  --font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+body, .app-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;;
+}
+
+.theme-button {
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover and Active Effects */
+.theme-button:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+
+.theme-button.active {
+  font-size: 20px;
+  animation: rotate 0.5s ease-in-out;
+  background-color: transparent;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    /* Start from 0 degrees */
+  }
+
+  100% {
+    transform: rotate(360deg);
+    /* Complete a full 360-degree rotation */
+  }
+}
+
+/* Sun and Moon Animation when switching themes */
+.theme-button.active-sun {
+  animation: sun-scale 0.5s ease-in-out;
+  /* Scale-up animation for sun */
+}
+
+.theme-button.active-moon {
+  animation: moon-scale 0.5s ease-in-out;
+  /* Scale-up animation for moon */
+}
+
+@keyframes sun-scale {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes moon-scale {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+/* Sun and Moon Animation when switching themes */
+.theme-button.active-sun {
+  animation: sun-scale 0.5s ease-in-out;
+  /* Scale-up animation for sun */
+}
+
+.theme-button.active-moon {
+  animation: moon-scale 0.5s ease-in-out;
+  /* Scale-up animation for moon */
+}
+
+@keyframes sun-scale {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes moon-scale {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.status {
+  color: var(--button-save-background);
+  /* Green for success message */
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover-background);
+  box-shadow: var(--box-shadow);
+}
+
+.save-button {
+  background-color: var(--button-save-background);
+}
+
+.cancel-button {
+  background-color: var(--button-cancel-background);
+}
+
+input, textarea, .search-bar {
+  background-color: var(--input-background);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, .search-bar:focus {
+  border-color: #5e9ad6;
+  /* Subtle blue outline on focus */
+}
+
+.shortcut-item {
+  background-color: var(--input-background);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  font-family: var(--font-family);
+}
+
+/* Dark theme support */
+.emoji-picker {
+  background-color: var(--input-background);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--input-border);
+}
+
+/* Placeholder Dropdown */
+.placeholder-dropdown {
+  background-color: var(--input-background);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+}
+
+.add-placeholder-button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+}
+
+.add-placeholder-button:hover {
+  background-color: var(--hover-background);
+  box-shadow: var(--box-shadow);
+}

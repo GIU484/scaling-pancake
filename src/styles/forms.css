@@ -1,0 +1,47 @@
+.create-shortcut-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .input-field {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border);
+  }
+
+  .placeholder-dropdown {
+    position: absolute;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 100;
+  }
+  
+  .placeholder-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .placeholder-dropdown li {
+    padding: 8px 12px;
+    background-color: var(--input-background);
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .placeholder-dropdown li:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+ 

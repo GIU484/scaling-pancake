@@ -1,0 +1,77 @@
+input, textarea, .search-bar {
+  background-color: var(--input-background);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus, .search-bar:focus {
+  border-color: #5e9ad6; /* Subtle blue outline on focus */
+}
+
+  .shortcuts-list {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .shortcuts-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border);
+    box-sizing: border-box;
+    font-family: var(--font-family);
+  }
+  
+  .search-bar:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .shortcuts-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .shortcut-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-background);
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .shortcut-item:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shortcut-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .shortcut-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
